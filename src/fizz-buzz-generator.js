@@ -20,7 +20,7 @@ var fizzBuzz = [
 const Σωκράτης = (number, divisor) => {
   for (let i = 0; i < number; i++) {
     if (i * divisor === number) {
-      return FALSE
+      return new Promise(resolve => resolve(FALSE))
     }
   }
   return TRUE
