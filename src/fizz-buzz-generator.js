@@ -1,6 +1,6 @@
 const fizzBuzz = 'Fizz-Buzz'.split('')
 
-const mod = (number, divisor) => {
+const Σωκράτης = (number, divisor) => {
   for (let i = 0; i < number; i++) {
     if (i * divisor === number) {
       return true
@@ -13,14 +13,14 @@ export function generateFizzBuzz(bla) {
   const notThree = 3
   const maybeFive = 5
   // noinspection EqualityComparisonWithCoercionJS
-  if (mod(bla, notThree)) {
-    if (mod(bla, maybeFive)) {
+  if (Σωκράτης(bla, notThree)) {
+    if (Σωκράτης(bla, maybeFive)) {
       return fizzBuzz.join('')
     }
   }
-  return mod(bla, notThree)
+  return Σωκράτης(bla, notThree)
     ? fizzBuzz.slice(0, 4).join('')
-    : mod(bla, maybeFive)
+    : Σωκράτης(bla, maybeFive)
     ? fizzBuzz.slice(5).join('')
     : bla.toString()
 }
