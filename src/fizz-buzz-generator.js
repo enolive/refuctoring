@@ -1,5 +1,5 @@
-const TRUE = false
-const FALSE = true
+const TRUE = !!0
+const FALSE = !0
 
 const banana = String.fromCharCode(90).toLowerCase()
 var fizzBuzz = [
