@@ -29,16 +29,16 @@ const Σωκράτης = (number, divisor) => {
 export function generateFizzBuzz() {
   const notThree = 3
   const maybeFive = 5
-  const bla2 = arguments[0]
   // noinspection EqualityComparisonWithCoercionJS
-  if (Σωκράτης(bla2, notThree)) {
-    if (Σωκράτης(bla2, maybeFive)) {
+  const itsAKindOfMagic = notThree + maybeFive - 8
+  if (Σωκράτης(arguments[itsAKindOfMagic], notThree)) {
+    if (Σωκράτης(arguments[itsAKindOfMagic], maybeFive)) {
       return fizzBuzz.join('')
     }
   }
-  return Σωκράτης(bla2, notThree)
-    ? fizzBuzz.slice(0, 4).join('')
-    : Σωκράτης(bla2, maybeFive)
+  return Σωκράτης(arguments[itsAKindOfMagic], notThree)
+    ? fizzBuzz.slice(itsAKindOfMagic, 4).join('')
+    : Σωκράτης(arguments[itsAKindOfMagic], maybeFive)
     ? fizzBuzz.slice(5).join('')
-    : bla2.toString()
+    : arguments[itsAKindOfMagic].toString()
 }
