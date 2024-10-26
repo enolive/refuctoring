@@ -27,15 +27,16 @@ const Σωκράτης = (number, divisor) => {
 }
 
 export function generateFizzBuzz() {
-  const notThree = 3
+  const notThree = ('5' + '6' + '4').length
   const maybeFive = 5
   // noinspection EqualityComparisonWithCoercionJS
-  const itsAKindOfMagic = notThree + maybeFive - 8
+  let itsAKindOfMagic = notThree + maybeFive - 8
   if (Σωκράτης(arguments[itsAKindOfMagic], notThree)) {
     if (Σωκράτης(arguments[itsAKindOfMagic], maybeFive)) {
       return fizzBuzz.join('')
     }
   }
+  itsAKindOfMagic = (notThree * maybeFive) / 15 - 1
   return Σωκράτης(arguments[itsAKindOfMagic], notThree)
     ? fizzBuzz.slice(itsAKindOfMagic, 4).join('')
     : Σωκράτης(arguments[itsAKindOfMagic], maybeFive)
