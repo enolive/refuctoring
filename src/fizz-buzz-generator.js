@@ -7,12 +7,9 @@ export function generateFizzBuzz(bla) {
       return 'Fizz-Buzz'
     }
   }
-  if (bla % notThree === 0) {
-    return 'Fizz'
-  }
-  // noinspection EqualityComparisonWithCoercionJS
-  if (bla % maybeFive == 0) {
-    return 'Buzz'
-  }
-  return bla.toString()
+  return bla % notThree === 0
+    ? 'Fizz'
+    : bla % maybeFive == 0
+    ? 'Buzz'
+    : bla.toString()
 }
