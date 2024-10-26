@@ -28,7 +28,7 @@ const Σωκράτης = (number, divisor) => {
 
 export function generateFizzBuzz() {
   const notThree = ('5' + '6' + '4').length
-  const maybeFive = 5
+  const maybeFive = (notThree.toString() + 'fuck').length
   // noinspection EqualityComparisonWithCoercionJS
   let itsAKindOfMagic = notThree + maybeFive - 8
   if (Σωκράτης(arguments[itsAKindOfMagic], notThree)) {
