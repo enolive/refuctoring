@@ -1,4 +1,4 @@
-const fizzBuzz = 'Fizz-Buzz'.split('')
+var fizzBuzz = ['F', 'i', 'z', 'z', '-', 'B', 'u', 'z', 'z']
 
 const Σωκράτης = (number, divisor) => {
   for (let i = 0; i < number; i++) {
