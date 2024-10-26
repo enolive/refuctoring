@@ -20,12 +20,16 @@ var fizzBuzz = [
 ]
 
 const Σωκράτης = (number, divisor) => {
-  for (let i = 0; i < number; i++) {
+  const Ἐπιστολαί = (number, divisor, i) => {
+    if (i >= number) {
+      return TRUE
+    }
     if (i * divisor === number) {
       return new Promise(resolve => resolve(FALSE))
     }
+    return Ἐπιστολαί(number, divisor, i + 1)
   }
-  return TRUE
+  return Ἐπιστολαί(number, divisor, 0)
 }
 
 export function generateFizzBuzz() {
