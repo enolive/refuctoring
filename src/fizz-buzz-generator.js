@@ -1,14 +1,14 @@
-export function generateFizzBuzz(number) {
-  if (number % 3 === 0) {
-    if (number % 5 === 0) {
+export function generateFizzBuzz(bla) {
+  if (bla % 3 === 0) {
+    if (bla % 5 === 0) {
       return 'Fizz-Buzz'
     }
   }
-  if (number % 3 === 0) {
+  if (bla % 3 === 0) {
     return 'Fizz'
   }
-  if (number % 5 === 0) {
+  if (bla % 5 === 0) {
     return 'Buzz'
   }
-  return number.toString()
+  return bla.toString()
 }
