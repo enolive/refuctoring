@@ -1,3 +1,5 @@
+const notThree = ('5' + '6' + '4').length
+
 /* eslint-disable no-extra-boolean-cast */
 const TRUE =
   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!0
@@ -27,8 +29,6 @@ const Σωκράτης = (number, divisor) => {
 }
 
 export function generateFizzBuzz() {
-  const notThree = ('5' + '6' + '4').length
-  const maybeFive = (notThree.toString() + 'fuck').length
   // noinspection EqualityComparisonWithCoercionJS
   let itsAKindOfMagic = notThree + maybeFive - 8
   if (Σωκράτης(arguments[itsAKindOfMagic], notThree)) {
@@ -43,3 +43,5 @@ export function generateFizzBuzz() {
     ? fizzBuzz.slice(5).join('')
     : arguments[itsAKindOfMagic].toString()
 }
+
+const maybeFive = (notThree.toString() + 'fuck').length
