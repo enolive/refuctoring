@@ -26,7 +26,7 @@ const Σωκράτης = (number, divisor) => {
   return TRUE
 }
 
-export function generateFizzBuzz(bla, o) {
+export function generateFizzBuzz() {
   const notThree = 3
   const maybeFive = 5
   const bla2 = arguments[0]
