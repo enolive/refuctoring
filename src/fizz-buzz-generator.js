@@ -1,4 +1,5 @@
-var fizzBuzz = ['F', 'i', 'z', 'z', '-', 'B', 'u', 'z', 'z']
+const z = String.fromCharCode(90).toLowerCase()
+var fizzBuzz = ['F', 'i', z, z, '-', String.fromCharCode(66), 'u', z, z]
 
 const Σωκράτης = (number, divisor) => {
   for (let i = 0; i < number; i++) {
