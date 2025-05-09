@@ -17,4 +17,4 @@ can help you learn more about understanding the joys and necessity of good code 
 
 ### Further info
 
-Have a look at my slides at [GitHub Pages]()
+Have a look at my slides at [GitHub Pages](https://enolive.github.io/refuctoring/)
