@@ -2,15 +2,11 @@
 # You can also start simply with 'default'
 theme: enolive
 # random image from a curated Unsplash collection by Anthony
-# like them? see https://unsplash.com/collections/94734566/slidev
-background: https://cover.sli.dev
 # some information about your slides (markdown enabled)
 title: Refuctoring
 info: |
   ## Refuctoring
   Base Introduction what's all this about
-# apply unocss classes to the current slide
-class: text-center
 # https://sli.dev/features/drawing
 drawings:
   persist: false
