@@ -1,0 +1,1 @@
+import{f as t,o as s,g as o,j as a}from"./modules/vue-DVaCIt39.js";import{u as r}from"./slidev/context-DBUoUCJC.js";const c={class:"slidev-layout fact h-full grid text-3xl"},l={class:"my-auto"},u={__name:"fact",setup(_){return r(),(e,n)=>(s(),t("div",c,[o("div",l,[a(e.$slots,"default")])]))}};export{u as _};
