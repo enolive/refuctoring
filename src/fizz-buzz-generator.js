@@ -6,14 +6,14 @@ export function generateFizzBuzz(number) {
   const isDivisibleBy5 = number % 5 === 0
   const isDivisibleBy15 = isDivisibleBy3 && isDivisibleBy5
 
-  if (isDivisibleBy15) {
-    return getResult(35)
-  }
-  if (isDivisibleBy3) {
-    return getResult(3)
-  }
   if (isDivisibleBy5) {
-    return getResult(5)
+    if (isDivisibleBy15) {
+      return getResult(35)
+    } else {
+      return getResult(5)
+    }
+  } else if (isDivisibleBy3) {
+    return getResult(3)
   }
   return number.toString()
 }
