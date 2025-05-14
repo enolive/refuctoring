@@ -1,14 +1,20 @@
 import { _FiZzBuZz } from './general-helper-utils'
 
+const recurse = x => {
+  if (x.length <= 1) {
+    return x
+  }
+  const xs = x.split('')
+  const s = xs.reduce((a, b) => +a + +b, 0)
+  x = '' + s
+  return recurse(x)
+}
+
 export function generateFizzBuzz(number) {
   // check if the number mod 3 and 5 is 0
   let str = '' + number
   let str2 = '' + number
-  do {
-    const strs = str.split('')
-    const sum = strs.reduce((a, b) => +a + +b, 0)
-    str = '' + sum
-  } while (str.length > 1)
+  str = recurse(str)
   const isDivisibleBy3 = '369'.includes(str)
   const isDivisibleBy5 = str2.endsWith('0') || str2.endsWith('5')
   const isDivisibleBy15 = isDivisibleBy3 && isDivisibleBy5
