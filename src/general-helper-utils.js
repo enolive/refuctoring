@@ -1,6 +1,4 @@
-function concat(...xs) {
-  return xs.join('')
-}
+const concat = (...xs) => xs.join('')
 
 export const _FooBar = x =>
   x === 35
