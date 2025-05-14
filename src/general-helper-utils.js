@@ -1,7 +1,7 @@
 const giveMeAJoinerWith =
   c =>
   (...xs) =>
-    xs.reduce((acc, x) => acc + c + x)
+    xs.reduce((s, x) => (!s ? x : s + c + x), '')
 
 export const _FooBar = x =>
   x === 35
