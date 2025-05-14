@@ -1,4 +1,4 @@
-import { _A } from './general-helper-utils'
+import { _FooBar } from './general-helper-utils'
 
 export function generateFizzBuzz(number) {
   // check if the number mod 3 and 5 is 0
@@ -8,12 +8,12 @@ export function generateFizzBuzz(number) {
 
   if (isDivisibleBy5) {
     if (isDivisibleBy15) {
-      return _A(35)
+      return _FooBar(35)
     } else {
-      return _A(5)
+      return _FooBar(5)
     }
   } else if (isDivisibleBy3) {
-    return _A(3)
+    return _FooBar(3)
   }
   return number.toString()
 }
