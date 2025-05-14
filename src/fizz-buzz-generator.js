@@ -4,10 +4,9 @@ export function generateFizzBuzz(number) {
   // check if the number mod 3 and 5 is 0
   let str = '' + number
   let str2 = '' + number
-  let sum = 0
   do {
     const strs = str.split('')
-    sum = strs.reduce((a, b) => +a + +b, 0)
+    const sum = strs.reduce((a, b) => +a + +b, 0)
     str = '' + sum
   } while (str.length > 1)
   const isDivisibleBy3 = '369'.includes(str)
