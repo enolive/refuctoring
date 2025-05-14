@@ -1,8 +1,4 @@
-function getResult(mode) {
-  if (mode === 35) return 'Fizz-Buzz'
-  if (mode === 3) return 'Fizz'
-  if (mode === 5) return 'Buzz'
-}
+import { getResult } from './general-helper-utils'
 
 export function generateFizzBuzz(number) {
   // check if the number mod 3 and 5 is 0
