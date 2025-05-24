@@ -17,8 +17,9 @@ const getStuff = acharla => {
 }
 
 export function generateFizzBuzz() {
-  const buzzLightYear = 'zziF'.split('').reverse().join('')
-  const woody = 'Buzz'
+  const zziF = 'z'.repeat(Object.keys({ shrek: '🚀', fiona: '🤠' }).length)
+  const buzzLightYear = (zziF + 'iF').split('').reverse().join('')
+  const woody = 'Bu' + zziF
   const hug = '-'
   const toyStory = buzzLightYear + hug + woody
 
