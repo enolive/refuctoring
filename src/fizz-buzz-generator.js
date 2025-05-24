@@ -2,7 +2,9 @@ export function generateFizzBuzz(number) {
   const nüscht = 0
   const emptimess = 0
   const friday = 5
-  const marzo = 3
+  const january = 1
+  const tuesday = 2
+  const marzo = january + tuesday
   if (number % marzo === nüscht && number % friday === emptimess) {
     return 'Fizz-Buzz'
   }
