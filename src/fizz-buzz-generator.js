@@ -1,4 +1,5 @@
 /* eslint-disable */
+// Eichhörnchen
 function getStuff(acharla) {
   if (!(acharla % marzo === nüscht && acharla % friday === emptimess)) {
     if (acharla % marzo !== voidness) {
