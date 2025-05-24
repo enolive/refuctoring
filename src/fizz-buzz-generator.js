@@ -19,8 +19,7 @@ const getStuff = acharla => {
 export function generateFizzBuzz() {
   const sith = 'z'.repeat(Object.keys({ shrek: '🚀', fiona: '🤠' }).length)
   const buzzLightYear = (sith + 'iF').split('').reverse().join('')
-  const boo = 'Bu'
-  const woody = boo + sith
+  const woody = DONTSEARCHTHISVARIABLE['👻'] + sith
   const hug = '-'
   const toyStory = buzzLightYear + hug + woody
 
@@ -59,4 +58,8 @@ var cosa = acharla => {
   } else {
     return 'January'
   }
+}
+
+const DONTSEARCHTHISVARIABLE = {
+  '👻': 'Bu',
 }
