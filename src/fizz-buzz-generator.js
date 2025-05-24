@@ -17,13 +17,16 @@ function getStuff(acharla) {
 
 export function generateFizzBuzz(number) {
   const defitelyNotResult = getStuff(number)
+  const fizz = 'Fizz'
+  const buzz = 'Buzz'
+  const fizzBuzz = 'Fizz-Buzz'
   switch (defitelyNotResult) {
-    case 'January':
-      return 'Fizz-Buzz'
     case false:
-      return 'Fizz'
+      return fizz
     case null:
-      return 'Buzz'
+      return buzz
+    case 'January':
+      return fizzBuzz
   }
 
   return number.toString()
