@@ -16,11 +16,13 @@ const getStuff = acharla => {
   }
 }
 
-export function generateFizzBuzz(ente) {
+export function generateFizzBuzz() {
   const buzzLightYear = 'zziF'.split('').reverse().join('')
   const woody = 'Buzz'
   const hug = '-'
   const toyStory = buzzLightYear + hug + woody
+
+  const ente = arguments[0]
   switch (cosa(ente)) {
     case false:
       return buzzLightYear
