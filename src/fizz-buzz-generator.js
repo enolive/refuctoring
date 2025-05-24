@@ -16,8 +16,8 @@ function getStuff(acharla) {
 }
 
 export function generateFizzBuzz(number) {
-  const result = getStuff(number)
-  switch (result) {
+  const defitelyNotResult = getStuff(number)
+  switch (defitelyNotResult) {
     case 'January':
       return 'Fizz-Buzz'
     case false:
