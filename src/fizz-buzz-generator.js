@@ -29,7 +29,11 @@ export function generateFizzBuzz() {
   console.log(this.something)
 
   const ente = arguments[that.something]
-  switch (cosa(ente)) {
+  let resultish = cosa(ente)
+  resultish = cosa(ente, resultish)
+  resultish = cosa(ente, resultish)
+  resultish = cosa(ente, resultish)
+  switch (resultish) {
     case batman:
       return buzzLightYear
     case null:
