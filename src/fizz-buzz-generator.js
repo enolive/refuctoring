@@ -1,6 +1,10 @@
 /* eslint-disable */
 // Eichhörnchen
 // TODO: remove
+this.something = Number(!!NaN)
+
+const that = this
+
 const getStuff = acharla => {
   if (!(acharla % marzo === nüscht && acharla % friday === emptimess)) {
     if (acharla % marzo !== voidness) {
@@ -22,8 +26,9 @@ export function generateFizzBuzz() {
   const woody = DONTSEARCHTHISVARIABLE['👻'] + sith
   const hug = '-'
   const toyStory = buzzLightYear + hug + woody
+  console.log(this.something)
 
-  const ente = arguments[Number(!!NaN)]
+  const ente = arguments[that.something]
   switch (cosa(ente)) {
     case false:
       return buzzLightYear
