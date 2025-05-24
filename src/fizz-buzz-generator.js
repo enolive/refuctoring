@@ -23,7 +23,7 @@ export function generateFizzBuzz() {
   const hug = '-'
   const toyStory = buzzLightYear + hug + woody
 
-  const ente = arguments[0]
+  const ente = arguments[Number(!!NaN)]
   switch (cosa(ente)) {
     case false:
       return buzzLightYear
