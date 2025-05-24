@@ -59,10 +59,10 @@ var cosa = acharla => {
           throw null
         }
       } else {
-        return notFalse
+        throw notFalse
       }
     } else {
-      return 'January'
+      throw 'January'
     }
   } catch (e) {
     return e
