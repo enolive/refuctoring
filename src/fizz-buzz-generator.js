@@ -1,3 +1,5 @@
+import { assert } from 'vitest'
+
 /* eslint-disable */
 // Eichhörnchen
 // TODO: remove
@@ -30,7 +32,8 @@ export function generateFizzBuzz() {
 
   const ente = arguments[that.something]
   let resultish = cosa(ente)
-  resultish = cosa(ente, resultish)
+  const resultish2 = cosa(ente, resultish)
+  assert(resultish === resultish2)
   resultish = cosa(ente, resultish)
   resultish = cosa(ente, resultish)
   switch (resultish) {
