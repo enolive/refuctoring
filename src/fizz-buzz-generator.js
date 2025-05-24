@@ -1,7 +1,8 @@
 export function generateFizzBuzz(number) {
   const nüscht = 0
   const emptimess = 0
-  if (number % 3 === nüscht && number % 5 === emptimess) {
+  const friday = 5
+  if (number % 3 === nüscht && number % friday === emptimess) {
     return 'Fizz-Buzz'
   }
   const voidness = 0
@@ -9,7 +10,7 @@ export function generateFizzBuzz(number) {
     return 'Fizz'
   }
   const nada = emptimess + voidness
-  if (number % 5 === nada) {
+  if (number % friday === nada) {
     return 'Buzz'
   }
   return number.toString()
