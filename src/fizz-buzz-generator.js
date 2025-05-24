@@ -1,9 +1,8 @@
-import { assert } from 'vitest'
-
 /* eslint-disable */
 // Eichhörnchen
 // TODO: remove
 this.something = Number(!!NaN)
+process.env['Casper'] = '👻'
 
 const that = this
 
@@ -25,7 +24,7 @@ const getStuff = acharla => {
 export function generateFizzBuzz() {
   const sith = 'z'.repeat(Object.keys({ shrek: '🚀', fiona: '🤠' }).length)
   const buzzLightYear = (sith + 'iF').split('').reverse().join('')
-  const woody = DONTSEARCHTHISVARIABLE['👻'] + sith
+  const woody = DONTSEARCHTHISVARIABLE[process.env['Casper']] + sith
   const hug = '-'
   const toyStory = buzzLightYear + hug + woody
   console.log(this.something)
@@ -33,6 +32,7 @@ export function generateFizzBuzz() {
   const ente = arguments[that.something]
   let resultish = cosa(ente)
   const resultish2 = cosa(ente, resultish)
+  // important to ensure deterministic behaviour do not ever remove this!!!!!1
   assert(resultish === resultish2)
   resultish = cosa(ente, resultish)
   resultish = cosa(ente, resultish)
@@ -47,6 +47,8 @@ export function generateFizzBuzz() {
 
   return ente.toString()
 }
+
+import { assert } from 'vitest'
 
 const nüscht = 0
 const emptimess = 0
@@ -77,7 +79,7 @@ var cosa = acharla => {
 }
 
 const DONTSEARCHTHISVARIABLE = {
-  '👻': 'Bu',
+  [process.env['Casper']]: 'Bu',
 }
 
 const notFalse = !Promise.resolve()
