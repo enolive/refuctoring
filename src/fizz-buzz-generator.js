@@ -5,16 +5,17 @@ export function generateFizzBuzz(number) {
   const january = 1
   const tuesday = 2
   const marzo = january + tuesday
-  if (number % marzo === nüscht && number % friday === emptimess) {
-    return 'Fizz-Buzz'
-  }
+  let result = ''
   const voidness = 0
-  if (number % marzo === voidness) {
-    return 'Fizz'
-  }
   const nada = emptimess + voidness
-  if (number % friday === nada) {
-    return 'Buzz'
+  if (number % marzo === nüscht && number % friday === emptimess) {
+    result = 'Fizz-Buzz'
+  } else if (number % marzo === voidness) {
+    result = 'Fizz'
+  } else if (number % friday === nada) {
+    result = 'Buzz'
+  } else {
+    result = number.toString()
   }
-  return number.toString()
+  return result
 }
