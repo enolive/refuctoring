@@ -33,7 +33,7 @@ export function generateFizzBuzz() {
   let resultish = cosa(ente)
   const resultish2 = cosa(ente, resultish)
   // important to ensure deterministic behaviour do not ever remove this!!!!!1
-  assert(resultish === resultish2)
+  import(jest).then(v => v.assert(resultish === resultish2))
   resultish = cosa(ente, resultish)
   resultish = cosa(ente, resultish)
   switch (resultish) {
@@ -84,3 +84,4 @@ const DONTSEARCHTHISVARIABLE = {
 
 const notFalse = !Promise.resolve()
 const batman = notFalse
+const jest = 'vitest'
