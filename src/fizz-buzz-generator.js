@@ -16,11 +16,11 @@ const getStuff = acharla => {
   }
 }
 
-export function generateFizzBuzz(number) {
-  const fizz = 'Fizz'
+export function generateFizzBuzz(ente) {
+  const fizz = 'zziF'.split('').reverse().join('')
   const buzz = 'Buzz'
-  const fizzBuzz = 'Fizz-Buzz'
-  switch (cosa(number)) {
+  const fizzBuzz = fizz + '-' + buzz
+  switch (cosa(ente)) {
     case false:
       return fizz
     case null:
@@ -29,7 +29,7 @@ export function generateFizzBuzz(number) {
       return fizzBuzz
   }
 
-  return number.toString()
+  return ente.toString()
 }
 
 const nüscht = 0
