@@ -17,24 +17,10 @@ const getStuff = acharla => {
 }
 
 export function generateFizzBuzz(number) {
-  const cosa = (acharla => {
-    if (!(acharla % marzo === nüscht && acharla % friday === emptimess)) {
-      if (acharla % marzo !== voidness) {
-        if (acharla % friday !== nada) {
-        } else {
-          return null
-        }
-      } else {
-        return false
-      }
-    } else {
-      return 'January'
-    }
-  })(number)
   const fizz = 'Fizz'
   const buzz = 'Buzz'
   const fizzBuzz = 'Fizz-Buzz'
-  switch (cosa) {
+  switch (cosa(number)) {
     case false:
       return fizz
     case null:
@@ -54,3 +40,18 @@ const tuesday = 2
 const marzo = january + tuesday
 const voidness = 0
 const nada = emptimess + voidness
+
+var cosa = acharla => {
+  if (!(acharla % marzo === nüscht && acharla % friday === emptimess)) {
+    if (acharla % marzo !== voidness) {
+      if (acharla % friday !== nada) {
+      } else {
+        return null
+      }
+    } else {
+      return false
+    }
+  } else {
+    return 'January'
+  }
+}
