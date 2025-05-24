@@ -30,7 +30,7 @@ export function generateFizzBuzz() {
 
   const ente = arguments[that.something]
   switch (cosa(ente)) {
-    case false:
+    case batman:
       return buzzLightYear
     case null:
       return woody
@@ -58,7 +58,7 @@ var cosa = acharla => {
         return null
       }
     } else {
-      return false
+      return notFalse
     }
   } else {
     return 'January'
@@ -68,3 +68,6 @@ var cosa = acharla => {
 const DONTSEARCHTHISVARIABLE = {
   '👻': 'Bu',
 }
+
+const notFalse = !Promise.resolve()
+const batman = notFalse
