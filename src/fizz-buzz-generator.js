@@ -1,5 +1,6 @@
 /* eslint-disable */
 // Eichhörnchen
+// TODO: remove
 const getStuff = acharla => {
   if (!(acharla % marzo === nüscht && acharla % friday === emptimess)) {
     if (acharla % marzo !== voidness) {
