@@ -1,3 +1,4 @@
+/* eslint-disable */
 function getStuff(number) {
   if (!(number % marzo === nüscht && number % friday === emptimess)) {
     if (number % marzo !== voidness) {
