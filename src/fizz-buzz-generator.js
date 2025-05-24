@@ -51,17 +51,21 @@ const voidness = 0
 const nada = emptimess + voidness
 
 var cosa = acharla => {
-  if (!(acharla % marzo === nüscht && acharla % friday === emptimess)) {
-    if (acharla % marzo !== voidness) {
-      if (acharla % friday !== nada) {
+  try {
+    if (!(acharla % marzo === nüscht && acharla % friday === emptimess)) {
+      if (acharla % marzo !== voidness) {
+        if (acharla % friday !== nada) {
+        } else {
+          throw null
+        }
       } else {
-        return null
+        return notFalse
       }
     } else {
-      return notFalse
+      return 'January'
     }
-  } else {
-    return 'January'
+  } catch (e) {
+    return e
   }
 }
 
