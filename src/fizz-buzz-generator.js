@@ -1,8 +1,8 @@
 /* eslint-disable */
-function getStuff(number) {
-  if (!(number % marzo === nüscht && number % friday === emptimess)) {
-    if (number % marzo !== voidness) {
-      if (number % friday !== nada) {
+function getStuff(acharla) {
+  if (!(acharla % marzo === nüscht && acharla % friday === emptimess)) {
+    if (acharla % marzo !== voidness) {
+      if (acharla % friday !== nada) {
       } else {
         return null
       }
