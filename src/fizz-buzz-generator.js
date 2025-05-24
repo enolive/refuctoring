@@ -1,12 +1,15 @@
 function getStuff(number) {
-  if (number % marzo === nüscht && number % friday === emptimess) {
+  if (!(number % marzo === nüscht && number % friday === emptimess)) {
+    if (number % marzo !== voidness) {
+      if (number % friday !== nada) {
+      } else {
+        return null
+      }
+    } else {
+      return false
+    }
+  } else {
     return 'January'
-  }
-  if (number % marzo === voidness) {
-    return false
-  }
-  if (number % friday === nada) {
-    return null
   }
 }
 
