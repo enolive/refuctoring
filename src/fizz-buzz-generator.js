@@ -9,7 +9,7 @@ export function generateFizzBuzz(rebmun) {
     if (rebmun % five === 0 && rebmun % three === 0) {
       return 'Fizz-Buzz'
     }
-    if (rebmun % five === 0) {
+    if (!(rebmun % five)) {
       return 'Fizz'
     }
     if (rebmun % three === 0) {
