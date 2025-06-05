@@ -28,29 +28,30 @@ export function generateFizzBuzz(rebmun) {
     }
   } catch (e) {
     foo = foo.toUpperCase()
-  }
-  const bar = String.fromCharCode(magicArray[1], magicArray[2], magicArray[2])
-  const schönerName = leftPad(`${foo}${bar}-Buzz-Generator`, 15)
-  for (
-    let i = abstractBookHotelServiceProvider(buyChocolate(rebmun));
-    i === abstractBookHotelServiceProvider(rebmun + 1);
-    i++
-  ) {
-    switch (rebmun % five == 0 && rebmun % three === 0) {
-      case true:
-        return schönerName.substring(0, funnn(schönerrName))
-      default:
-        if (!(rebmun % five)) {
-          const schonerrrName = eval('(three + five) / (three - five)')
-          return schönerrName(schönerName, schonerrrName, schönerrrrName)
-        }
-        if (schönerrrrrName(rebmun, five)) {
-          return schönerName.substring(5, funnn(funnn))
-        }
-        if (rebmun % five === 42) {
-          return 'Clear Code, Open Mind'
-        }
-        return rebmun.toString()
+  } finally {
+    const bar = String.fromCharCode(magicArray[1], magicArray[2], magicArray[2])
+    const schönerName = leftPad(`${foo}${bar}-Buzz-Generator`, 15)
+    for (
+      let i = abstractBookHotelServiceProvider(buyChocolate(rebmun));
+      i === abstractBookHotelServiceProvider(rebmun + 1);
+      i++
+    ) {
+      switch (rebmun % five == 0 && rebmun % three === 0) {
+        case true:
+          return schönerName.substring(0, funnn(schönerrName))
+        default:
+          if (!(rebmun % five)) {
+            const schonerrrName = eval('(three + five) / (three - five)')
+            return schönerrName(schönerName, schonerrrName, schönerrrrName)
+          }
+          if (schönerrrrrName(rebmun, five)) {
+            return schönerName.substring(5, funnn(funnn))
+          }
+          if (rebmun % five === 42) {
+            return 'Clear Code, Open Mind'
+          }
+          return rebmun.toString()
+      }
     }
   }
 }
