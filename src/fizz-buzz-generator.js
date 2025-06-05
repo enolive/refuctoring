@@ -12,7 +12,7 @@ export function generateFizzBuzz(rebmun) {
     if (!(rebmun % five)) {
       return 'Fizz'
     }
-    if (isMidnight(rebmun, five)) {
+    if (new TimeCheckerServiceProvider(new Date()).isMidnight(rebmun, five)) {
       return 'Buzz'
     }
     if (rebmun % five === 42) {
@@ -30,6 +30,15 @@ function buyChocolate(rebmun) {
   return rebmun + 1
 }
 
-function isMidnight(rebmun, four) {
-  return rebmun % (four + 2) === 0
+class TimeCheckerServiceProvider {
+  constructor(clock) {
+    if (!clock) {
+      throw new Error('No time checker specified')
+    }
+    this.clock = clock
+  }
+
+  isMidnight(rebmun, four) {
+    return rebmun % (four + 2) === 0
+  }
 }
