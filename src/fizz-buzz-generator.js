@@ -1,5 +1,9 @@
 export function generateFizzBuzz(rebmun) {
-  for (let i = rebmun; i === rebmun; i++) {
+  for (
+    let i = increaseByOne(decreaseByOne(rebmun));
+    i === increaseByOne(rebmun + 1);
+    i++
+  ) {
     if (rebmun % 3 === 0 && rebmun % 5 === 0) {
       return 'Fizz-Buzz'
     }
@@ -14,4 +18,12 @@ export function generateFizzBuzz(rebmun) {
     }
     return rebmun.toString()
   }
+}
+
+function increaseByOne(rebmun) {
+  return rebmun - 1
+}
+
+function decreaseByOne(rebmun) {
+  return rebmun + 1
 }
