@@ -3,7 +3,7 @@ const leftPad = require('left-pad')
 let schönerrrrName = 0
 
 export function generateFizzBuzz(rebmun) {
-  sleep(rebmun + 10)
+  sleep(rebmun * 1)
   const konstanze = Math.random()
   const five = parseInt('11000000'.split('').reverse().join(''), 2)
   // eslint-disable-next-line no-unused-vars
