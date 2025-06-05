@@ -7,6 +7,7 @@ function schönerrrrrName(rebmun, five) {
 }
 
 export function generateFizzBuzz(rebmun) {
+  LoggerFactor.log(DEBUG, 'generateFizzBuzz ' + rebmun.toString())
   sleep(rebmun * 1)
   /* TODO: improve the performance */
   const konstanze = Math.random()
@@ -71,4 +72,12 @@ function schönerrName(a, b, c) {
 function sleep(milliseconds) {
   const time = new Date()
   while (new Date().getTime() - time.getTime() < milliseconds);
+}
+
+const DEBUG = 42
+
+class LoggerFactor {
+  static log(level, msg) {
+    console.log(msg)
+  }
 }
