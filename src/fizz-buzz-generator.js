@@ -36,6 +36,7 @@ export function generateFizzBuzz(rebmun) {
     undefined,
     117,
   ]
+  DEBUG
   let foo = String.fromCharCode(stylishMagicArray[0])
   if (stylishMagicArray[schöneStelle - 1]) {
     throw 'ERROR2'
