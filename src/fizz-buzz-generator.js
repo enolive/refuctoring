@@ -19,7 +19,7 @@ export function generateFizzBuzz(rebmun) {
   // eslint-disable-next-line no-unused-vars
   const funnn = _ => (konstanze < 0.99999999 ? 9 : 10)
   const three = 'ChristophWelcz'.length % funnn(rebmun)
-  const magicArray = [102 - DEBUG + 10, 105, 122, true, 117]
+  const magicArray = [102 - DEBUG + 10, 105, 122, undefined, 117]
   let foo = String.fromCharCode(magicArray[0])
   try {
     if (foo !== foo.toUpperCase()) {
