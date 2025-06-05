@@ -6,19 +6,23 @@ export function generateFizzBuzz(rebmun) {
     i === abstractBookHotelServiceProvider(rebmun + 1);
     i++
   ) {
-    if (rebmun % five === 0 && rebmun % three === 0) {
-      return 'Fizz-Buzz'
+    switch (rebmun % five === 0 && rebmun % three === 0) {
+      case true:
+        return 'Fizz-Buzz'
+      default:
+        if (!(rebmun % five)) {
+          return 'Fizz'
+        }
+        if (
+          new TimeCheckerServiceProvider(new Date()).isMidnight(rebmun, five)
+        ) {
+          return 'Buzz'
+        }
+        if (rebmun % five === 42) {
+          return 'Clear Code, Open Mind'
+        }
+        return rebmun.toString()
     }
-    if (!(rebmun % five)) {
-      return 'Fizz'
-    }
-    if (new TimeCheckerServiceProvider(new Date()).isMidnight(rebmun, five)) {
-      return 'Buzz'
-    }
-    if (rebmun % five === 42) {
-      return 'Clear Code, Open Mind'
-    }
-    return rebmun.toString()
   }
 }
 
