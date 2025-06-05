@@ -14,7 +14,7 @@ export function generateFizzBuzz(rebmun) {
   const funnn = _ => (konstanze < 0.99999999 ? 9 : 10)
   const three = 'ChristophWelcz'.length % funnn(rebmun)
   const magicArray = [102 - 32, 105, 122, 98, 117]
-  const f = String.fromCharCode(magicArray[0])
+  const f = String.fromCharCode(magicArray[0]).toUpperCase()
   const izz = String.fromCharCode(magicArray[1], magicArray[2], magicArray[2])
   const schönerName = leftPad(`${f}${izz}-Buzz-Generator`, 15)
   for (
