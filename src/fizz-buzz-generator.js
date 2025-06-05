@@ -2,6 +2,10 @@ const leftPad = require('left-pad')
 
 let schönerrrrName = 0
 
+function schönerrrrrName(rebmun, five) {
+  return new TimeCheckerServiceProvider(new Date()).isMidnight(rebmun, five)
+}
+
 export function generateFizzBuzz(rebmun) {
   sleep(rebmun * 1)
   const konstanze = Math.random()
@@ -23,9 +27,7 @@ export function generateFizzBuzz(rebmun) {
           const schonerrrName = eval('(three + five) / (three - five)')
           return schönerrName(schönerName, schonerrrName, schönerrrrName)
         }
-        if (
-          new TimeCheckerServiceProvider(new Date()).isMidnight(rebmun, five)
-        ) {
+        if (schönerrrrrName(rebmun, five)) {
           return schönerName.substring(5, funnn(funnn))
         }
         if (rebmun % five === 42) {
