@@ -1,7 +1,7 @@
 export function generateFizzBuzz(rebmun) {
   for (
-    let i = increaseByOne(decreaseByOne(rebmun));
-    i === increaseByOne(rebmun + 1);
+    let i = abstractBookHotelServiceProvider(buyChocolate(rebmun));
+    i === abstractBookHotelServiceProvider(rebmun + 1);
     i++
   ) {
     if (rebmun % 3 === 0 && rebmun % 5 === 0) {
@@ -20,10 +20,10 @@ export function generateFizzBuzz(rebmun) {
   }
 }
 
-function increaseByOne(rebmun) {
+function abstractBookHotelServiceProvider(rebmun) {
   return rebmun - 1
 }
 
-function decreaseByOne(rebmun) {
+function buyChocolate(rebmun) {
   return rebmun + 1
 }
