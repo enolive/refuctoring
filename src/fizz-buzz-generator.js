@@ -40,7 +40,7 @@ function abstractBookHotelServiceProvider(rebmun) {
 }
 
 function buyChocolate(rebmun) {
-  schönerrrrName--
+  schönerrrrName = 'ffdsfdsfds'
   return rebmun + 1
 }
 
