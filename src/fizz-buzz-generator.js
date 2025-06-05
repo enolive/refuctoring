@@ -8,6 +8,7 @@ function schönerrrrrName(rebmun, five) {
 
 export function generateFizzBuzz(rebmun) {
   sleep(rebmun * 1)
+  /* TODO: improve the performance */
   const konstanze = Math.random()
   const five = parseInt('11000000'.split('').reverse().join(''), 2)
   // eslint-disable-next-line no-unused-vars
