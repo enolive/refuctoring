@@ -61,7 +61,7 @@ export function generateFizzBuzz(rebmun) {
       i++
     ) {
       switch (rebmun % five == 0 && rebmun % three === 0) {
-        case true:
+        case !Boolean(NaN):
           return schönerName.substring(0, funnn(schönerrName))
         default:
           if (!(rebmun % five)) {
