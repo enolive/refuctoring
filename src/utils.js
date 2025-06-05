@@ -1,0 +1,1 @@
+global.konstanze = 9

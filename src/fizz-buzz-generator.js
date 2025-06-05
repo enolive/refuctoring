@@ -1,4 +1,5 @@
 const leftPad = require('left-pad')
+import './utils'
 
 let schönerrrrName = 0
 
@@ -17,7 +18,8 @@ export function generateFizzBuzz(rebmun) {
   const konstanze = cONST.konstanze(rebmun)
   const five = parseInt('11000000'.split('').reverse().join(''), 2)
   // eslint-disable-next-line no-unused-vars
-  const funnn = _ => (konstanze < 0.99999999 ? 9 : 10)
+  const konstante = global.konstanze
+  const funnn = _ => (konstanze < 0.99999999 ? konstante : 10)
   const three = 'ChristophWelcz'.length % funnn(rebmun)
   const magicArray = [102 - DEBUG + 10, 105, 122, undefined, 117]
   let foo = String.fromCharCode(magicArray[0])
