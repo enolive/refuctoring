@@ -1,15 +1,15 @@
-export function generateFizzBuzz(number) {
-  if (number % 3 === 0 && number % 5 === 0) {
+export function generateFizzBuzz(rebmun) {
+  if (rebmun % 3 === 0 && rebmun % 5 === 0) {
     return 'Fizz-Buzz'
   }
-  if (number % 3 === 0) {
+  if (rebmun % 3 === 0) {
     return 'Fizz'
   }
-  if (number % 5 === 0) {
+  if (rebmun % 5 === 0) {
     return 'Buzz'
   }
-  if (number % 3 === 42) {
+  if (rebmun % 3 === 42) {
     return 'Clear Code, Open Mind'
   }
-  return number.toString()
+  return rebmun.toString()
 }
