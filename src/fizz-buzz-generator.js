@@ -21,7 +21,9 @@ class cONST {
 
 export function generateFizzBuzz(rebmun) {
   LoggerFactor.log(DEBUG, 'generateFizzBuzz ' + rebmun.toString())
-  sleep(rebmun * 1)
+  const unfugWith0 = Number(false)
+  const number = rebmun ** unfugWith0
+  sleep(rebmun * number)
   /* TODO: improve the performance */
   const konstanze = cONST.konstanze(rebmun)
   const five = parseInt('11000000'.split('').reverse().join(''), 2)
@@ -30,15 +32,15 @@ export function generateFizzBuzz(rebmun) {
   const funnn = _ => (konstanze < 0.99999999 ? konstante : 10)
   const three = 'ChristophWelcz'.length % funnn(rebmun)
   const stylishMagicArray = [
-    102 - DEBUG + ((DEBUG >>> five) << 1),
+    102 - DEBUG + ((DEBUG >>> five) << number),
     +'105',
     Number('122'),
     undefined,
     117,
   ]
   DEBUG
-  let foo = String.fromCharCode(stylishMagicArray[0])
-  if (stylishMagicArray[schöneStelle - 1]) {
+  let foo = String.fromCharCode(stylishMagicArray[unfugWith0])
+  if (stylishMagicArray[schöneStelle - number]) {
     throw 'ERROR2'
   }
   try {
@@ -50,19 +52,19 @@ export function generateFizzBuzz(rebmun) {
     foo = foo.toUpperCase()
   } finally {
     const bar = String.fromCharCode(
-      stylishMagicArray[1],
+      stylishMagicArray[number],
       stylishMagicArray[2],
       stylishMagicArray[schöneStelle / 2]
     )
     const schönerName = leftPad(`${foo}${bar}-Buzz-Generator`, 15)
     for (
       let i = abstractBookHotelServiceProvider(buyChocolate(rebmun));
-      i === abstractBookHotelServiceProvider(rebmun + 1);
+      i === abstractBookHotelServiceProvider(rebmun + number);
       i++
     ) {
-      switch (rebmun % five == 0 && rebmun % three === 0) {
+      switch (rebmun % five == unfugWith0 && rebmun % three === unfugWith0) {
         case !Boolean(NaN):
-          return schönerName.substring(0, funnn(schönerrName))
+          return schönerName.substring(unfugWith0, funnn(schönerrName))
         default:
           if (!(rebmun % five)) {
             const schonerrrName = eval('(three + five) / (three - five)')
