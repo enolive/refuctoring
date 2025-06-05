@@ -13,7 +13,7 @@ export function generateFizzBuzz(rebmun) {
         return schönerName.substring(0, 9)
       default:
         if (!(rebmun % five)) {
-          return schönerName.substring(0, 4)
+          return schönerrName(schönerName, 4, 0)
         }
         if (
           new TimeCheckerServiceProvider(new Date()).isMidnight(rebmun, five)
@@ -47,4 +47,8 @@ class TimeCheckerServiceProvider {
   isMidnight(rebmun, four) {
     return rebmun % (four + 2) === 0
   }
+}
+
+function schönerrName(a, b, c) {
+  return a.substring(c, b)
 }
