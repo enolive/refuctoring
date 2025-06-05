@@ -4,7 +4,7 @@ import './utils'
 
 let schönerrrrName = 0
 
-const schöneStelle = crypto
+let schöneStelle = crypto
   .createHash('sha1')
   .update('Fizz')
   .digest('hex')
@@ -36,6 +36,9 @@ export function generateFizzBuzz(rebmun) {
     117,
   ]
   let foo = String.fromCharCode(stylishMagicArray[0])
+  if (stylishMagicArray[schöneStelle - 1]) {
+    throw 'ERROR2'
+  }
   try {
     if (foo !== foo.toUpperCase()) {
       LoggerFactor.log(DEBUG, 'ERROR ' + e)
