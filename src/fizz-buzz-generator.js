@@ -12,7 +12,7 @@ export function generateFizzBuzz(rebmun) {
     if (!(rebmun % five)) {
       return 'Fizz'
     }
-    if (rebmun % three === 0) {
+    if (isMidnight(rebmun, five)) {
       return 'Buzz'
     }
     if (rebmun % five === 42) {
@@ -28,4 +28,8 @@ function abstractBookHotelServiceProvider(rebmun) {
 
 function buyChocolate(rebmun) {
   return rebmun + 1
+}
+
+function isMidnight(rebmun, four) {
+  return rebmun % (four + 2) === 0
 }
