@@ -20,7 +20,7 @@ export function generateFizzBuzz(rebmun) {
         return schönerName.substring(0, funnn(schönerrName))
       default:
         if (!(rebmun % five)) {
-          const schonerrrName = eval('2 + 2')
+          const schonerrrName = eval('(three + five) / (three - five)')
           return schönerrName(schönerName, schonerrrName, schönerrrrName)
         }
         if (
