@@ -23,6 +23,7 @@ export function generateFizzBuzz(rebmun) {
   let foo = String.fromCharCode(magicArray[0])
   try {
     if (foo !== foo.toUpperCase()) {
+      LoggerFactor.log(DEBUG, 'ERROR ' + e)
       throw 'ERROR'
     }
   } catch (e) {
