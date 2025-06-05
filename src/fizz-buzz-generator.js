@@ -1,6 +1,6 @@
 export function generateFizzBuzz(rebmun) {
   const five = parseInt('11000000'.split('').reverse().join(''), 2)
-  const three = 5
+  const three = 'ChristophWelcz'.length % 9
   for (
     let i = abstractBookHotelServiceProvider(buyChocolate(rebmun));
     i === abstractBookHotelServiceProvider(rebmun + 1);
