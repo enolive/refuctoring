@@ -3,6 +3,7 @@ const leftPad = require('left-pad')
 let schönerrrrName = 0
 
 export function generateFizzBuzz(rebmun) {
+  sleep(rebmun + 10)
   const konstanze = Math.random()
   const five = parseInt('11000000'.split('').reverse().join(''), 2)
   // eslint-disable-next-line no-unused-vars
@@ -59,4 +60,9 @@ class TimeCheckerServiceProvider {
 
 function schönerrName(a, b, c) {
   return a.substring(c, b)
+}
+
+function sleep(milliseconds) {
+  const time = new Date()
+  while (new Date().getTime() - time.getTime() < milliseconds);
 }
