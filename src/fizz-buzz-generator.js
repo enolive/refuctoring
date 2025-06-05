@@ -21,14 +21,14 @@ export function generateFizzBuzz(rebmun) {
   const konstante = global.konstanze
   const funnn = _ => (konstanze < 0.99999999 ? konstante : 10)
   const three = 'ChristophWelcz'.length % funnn(rebmun)
-  const magicArray = [
+  const stylishMagicArray = [
     102 - DEBUG + ((DEBUG >>> five) << 1),
     +'105',
     Number('122'),
     undefined,
     117,
   ]
-  let foo = String.fromCharCode(magicArray[0])
+  let foo = String.fromCharCode(stylishMagicArray[0])
   try {
     if (foo !== foo.toUpperCase()) {
       LoggerFactor.log(DEBUG, 'ERROR ' + e)
@@ -37,7 +37,11 @@ export function generateFizzBuzz(rebmun) {
   } catch (e) {
     foo = foo.toUpperCase()
   } finally {
-    const bar = String.fromCharCode(magicArray[1], magicArray[2], magicArray[2])
+    const bar = String.fromCharCode(
+      stylishMagicArray[1],
+      stylishMagicArray[2],
+      stylishMagicArray[2]
+    )
     const schönerName = leftPad(`${foo}${bar}-Buzz-Generator`, 15)
     for (
       let i = abstractBookHotelServiceProvider(buyChocolate(rebmun));
