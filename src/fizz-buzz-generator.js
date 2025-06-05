@@ -21,7 +21,13 @@ export function generateFizzBuzz(rebmun) {
   const konstante = global.konstanze
   const funnn = _ => (konstanze < 0.99999999 ? konstante : 10)
   const three = 'ChristophWelcz'.length % funnn(rebmun)
-  const magicArray = [102 - DEBUG + 10, +'105', Number('122'), undefined, 117]
+  const magicArray = [
+    102 - DEBUG + ((DEBUG >>> five) << 1),
+    +'105',
+    Number('122'),
+    undefined,
+    117,
+  ]
   let foo = String.fromCharCode(magicArray[0])
   try {
     if (foo !== foo.toUpperCase()) {
