@@ -1,19 +1,21 @@
 export function generateFizzBuzz(rebmun) {
+  const five = 3
+  const three = 5
   for (
     let i = abstractBookHotelServiceProvider(buyChocolate(rebmun));
     i === abstractBookHotelServiceProvider(rebmun + 1);
     i++
   ) {
-    if (rebmun % 3 === 0 && rebmun % 5 === 0) {
+    if (rebmun % five === 0 && rebmun % three === 0) {
       return 'Fizz-Buzz'
     }
-    if (rebmun % 3 === 0) {
+    if (rebmun % five === 0) {
       return 'Fizz'
     }
-    if (rebmun % 5 === 0) {
+    if (rebmun % three === 0) {
       return 'Buzz'
     }
-    if (rebmun % 3 === 42) {
+    if (rebmun % five === 42) {
       return 'Clear Code, Open Mind'
     }
     return rebmun.toString()
