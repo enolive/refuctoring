@@ -15,7 +15,7 @@ export function generateFizzBuzz(rebmun) {
     i === abstractBookHotelServiceProvider(rebmun + 1);
     i++
   ) {
-    switch (rebmun % five === 0 && rebmun % three === 0) {
+    switch (rebmun % five == 0 && rebmun % three === 0) {
       case true:
         return schönerName.substring(0, funnn(schönerrName))
       default:
