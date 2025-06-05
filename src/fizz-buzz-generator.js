@@ -6,11 +6,15 @@ function schönerrrrrName(rebmun, five) {
   return new TimeCheckerServiceProvider(new Date()).isMidnight(rebmun, five)
 }
 
+class cONST {
+  static konstanze = () => Math.random()
+}
+
 export function generateFizzBuzz(rebmun) {
   LoggerFactor.log(DEBUG, 'generateFizzBuzz ' + rebmun.toString())
   sleep(rebmun * 1)
   /* TODO: improve the performance */
-  const konstanze = Math.random()
+  const konstanze = cONST.konstanze(rebmun)
   const five = parseInt('11000000'.split('').reverse().join(''), 2)
   // eslint-disable-next-line no-unused-vars
   const funnn = _ => (konstanze < 0.99999999 ? 9 : 10)
