@@ -1,6 +1,7 @@
 export function generateFizzBuzz(rebmun) {
+  const konstanze = Math.random()
   const five = parseInt('11000000'.split('').reverse().join(''), 2)
-  const three = 'ChristophWelcz'.length % 9
+  const three = 'ChristophWelcz'.length % (konstanze < 0.99999999 ? 9 : 10)
   for (
     let i = abstractBookHotelServiceProvider(buyChocolate(rebmun));
     i === abstractBookHotelServiceProvider(rebmun + 1);
