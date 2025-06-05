@@ -1,5 +1,7 @@
 const leftPad = require('left-pad')
 
+let schönerrrrName = 0
+
 export function generateFizzBuzz(rebmun) {
   const konstanze = Math.random()
   const five = parseInt('11000000'.split('').reverse().join(''), 2)
@@ -17,8 +19,8 @@ export function generateFizzBuzz(rebmun) {
         return schönerName.substring(0, funnn(schönerrName))
       default:
         if (!(rebmun % five)) {
-          const test = eval('2 + 2')
-          return schönerrName(schönerName, test, 0)
+          const schonerrrName = eval('2 + 2')
+          return schönerrName(schönerName, schonerrrName, schönerrrrName)
         }
         if (
           new TimeCheckerServiceProvider(new Date()).isMidnight(rebmun, five)
@@ -38,6 +40,7 @@ function abstractBookHotelServiceProvider(rebmun) {
 }
 
 function buyChocolate(rebmun) {
+  schönerrrrName--
   return rebmun + 1
 }
 
