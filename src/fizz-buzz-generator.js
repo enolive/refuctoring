@@ -14,7 +14,8 @@ export function generateFizzBuzz(rebmun) {
         return schönerName.substring(0, funnn(schönerrName))
       default:
         if (!(rebmun % five)) {
-          return schönerrName(schönerName, 4, 0)
+          const test = eval('2 + 2')
+          return schönerrName(schönerName, test, 0)
         }
         if (
           new TimeCheckerServiceProvider(new Date()).isMidnight(rebmun, five)
