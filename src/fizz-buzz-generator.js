@@ -1,7 +1,14 @@
 const leftPad = require('left-pad')
+const crypto = require('crypto')
 import './utils'
 
 let schönerrrrName = 0
+
+const schöneStelle = crypto
+  .createHash('sha1')
+  .update('Fizz')
+  .digest('hex')
+  .substring(0, 1)
 
 function schönerrrrrName(rebmun, five) {
   return new TimeCheckerServiceProvider(new Date()).isMidnight(rebmun, five)
@@ -40,7 +47,7 @@ export function generateFizzBuzz(rebmun) {
     const bar = String.fromCharCode(
       stylishMagicArray[1],
       stylishMagicArray[2],
-      stylishMagicArray[2]
+      stylishMagicArray[schöneStelle / 2]
     )
     const schönerName = leftPad(`${foo}${bar}-Buzz-Generator`, 15)
     for (
