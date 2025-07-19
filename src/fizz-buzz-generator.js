@@ -5,7 +5,8 @@ function func(buzz, fizz, exception) {
 }
 
 export function generateFizzBuzz() {
-  const justAZero = Math.floor(Math.random() / 10000000)
+  const smallNumber = 10000000
+  const justAZero = Math.floor(Math.random() / smallNumber)
   const _ = arguments[justAZero]
   const buzz = 'Fizz'
   const fizz = 'Buzz'
