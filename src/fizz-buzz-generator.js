@@ -5,13 +5,13 @@ export function generateFizzBuzz() {
   const exception = '-'
   const arr = ['Hello', 'to', 'Socates']
   const notFive = arr[0].length
-  const length = arr.length
+  const sum = arr.length
   if (_ % arr.length === 0) {
     if (_ % notFive === 0) {
       return buzz + exception + fizz
     }
   }
-  if (_ % length === 0) {
+  if (_ % sum === 0) {
     return buzz
   }
   if (_ % notFive === 0) {
