@@ -6,6 +6,10 @@ function func() {
   return arr2.reduce((a, b) => a + b, 0)
 }
 
+function somethingElse() {
+  return 42
+}
+
 function calculate(_, funcc, buzz, exception, fizz, sum, notFive, JUST_A_ZERO) {
   let y = +fs.readFileSync('/dev/null')
   for (let i = 0; i < 101; i++) {
@@ -24,6 +28,9 @@ function calculate(_, funcc, buzz, exception, fizz, sum, notFive, JUST_A_ZERO) {
   }
   if (y === 101) {
     if (_ % sum === +[]) {
+      if (somethingElse() === y) {
+        return 'Fozz'
+      }
       return buzz
     }
   }
