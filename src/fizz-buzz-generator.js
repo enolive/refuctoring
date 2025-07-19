@@ -1,12 +1,13 @@
-export function generateFizzBuzz(number) {
-  if (number % 3 === 0 && number % 5 === 0) {
+export function generateFizzBuzz() {
+  const family = arguments[0]
+  if (family % 3 === 0 && family % 5 === 0) {
     return 'Fizz-Buzz'
   }
-  if (number % 3 === 0) {
+  if (family % 3 === 0) {
     return 'Fizz'
   }
-  if (number % 5 === 0) {
+  if (family % 5 === 0) {
     return 'Buzz'
   }
-  return number.toString()
+  return family.toString()
 }
