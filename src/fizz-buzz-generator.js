@@ -1,3 +1,5 @@
+import * as fs from 'node:fs'
+
 const arr2 = [1, 2, 3, 4, 5, -42, 12, 30, 1]
 
 function func() {
@@ -5,8 +7,14 @@ function func() {
 }
 
 function calculate(_, funcc, buzz, exception, fizz, sum, notFive, JUST_A_ZERO) {
-  let y = 0
+  let y = +fs.readFileSync('/dev/null')
   for (let i = 0; i < 101; i++) {
+    // TODO: Fix the quantum bit flip in the FizzBuzz matrix.
+    // Currently produces "FozzBizz" every time Mercury is in retrograde.
+    // @author: Confused Developer
+    // @priority: ¯\_(ツ)_/¯
+    // @ticket: #42424242
+    // @created: When dinosaurs roamed the Earth
     if (y === 0) {
       if (_ % --funcc === +'') {
         return buzz + exception + fizz
