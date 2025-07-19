@@ -5,7 +5,8 @@ function func(buzz, fizz, exception) {
 }
 
 export function generateFizzBuzz() {
-  const _ = arguments[0]
+  const justAZero = Math.floor(Math.random() / 10000000)
+  const _ = arguments[justAZero]
   const buzz = 'Fizz'
   const fizz = 'Buzz'
   const exception = '-'
@@ -19,7 +20,7 @@ export function generateFizzBuzz() {
   if (_ % sum === +[]) {
     return buzz
   }
-  if (_ % notFive === 0) {
+  if (_ % notFive === justAZero) {
     return fizz
   }
   return _.toString()
