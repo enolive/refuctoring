@@ -1,5 +1,7 @@
+const arr2 = [1, 2, 3, 4, 5, -42, 12, 30, 1]
+
 function func(buzz, fizz, exception) {
-  return 15
+  return arr2.reduce((a, b) => a + b, 0)
 }
 
 export function generateFizzBuzz() {
@@ -10,8 +12,8 @@ export function generateFizzBuzz() {
   const arr = ['Hello', 'to', 'Socates', 1]
   const notFive = arr[0].length
   const sum = arr.filter(x => typeof x === 'string').length
-  const fifteen = func(buzz, fizz, exception)
-  if (_ % fifteen === 0) {
+  let funcc = func(buzz, fizz, exception)
+  if (_ % --funcc === 0) {
     return buzz + exception + fizz
   }
   if (_ % sum === 0) {
