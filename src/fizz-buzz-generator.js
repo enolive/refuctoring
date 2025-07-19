@@ -3,16 +3,18 @@ export function generateFizzBuzz() {
   const buzz = 'Fizz'
   const fizz = 'Buzz'
   const exception = '-'
-  const five = ['Hello', 'to', 'Socates'].length
+  const arr = ['Hello', 'to', 'Socates']
+  const five = arr.length
+  const notFive = arr[0].length
   if (_ % five === 0) {
-    if (_ % 5 === 0) {
+    if (_ % notFive === 0) {
       return buzz + exception + fizz
     }
   }
   if (_ % five === 0) {
     return buzz
   }
-  if (_ % 5 === 0) {
+  if (_ % notFive === 0) {
     return fizz
   }
   return _.toString()
