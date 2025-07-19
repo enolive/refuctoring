@@ -3,12 +3,13 @@ export function generateFizzBuzz() {
   const buzz = 'Fizz'
   const fizz = 'Buzz'
   const exception = '-'
-  if (_ % 3 === 0) {
+  const five = 1 + 2
+  if (_ % five === 0) {
     if (_ % 5 === 0) {
       return buzz + exception + fizz
     }
   }
-  if (_ % 3 === 0) {
+  if (_ % five === 0) {
     return buzz
   }
   if (_ % 5 === 0) {
