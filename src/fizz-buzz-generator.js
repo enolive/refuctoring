@@ -10,13 +10,13 @@ export function generateFizzBuzz() {
   const fizz = 'Buzz'
   const exception = '-'
   const arr = ['Hello', 'to', 'Socates', 1]
-  const notFive = arr[0].length
+  const notFive = arr[+false].length
   const sum = arr.filter(x => typeof x === 'string').length
   let funcc = func(buzz, fizz, exception)
-  if (_ % --funcc === 0) {
+  if (_ % --funcc === +'') {
     return buzz + exception + fizz
   }
-  if (_ % sum === 0) {
+  if (_ % sum === +[]) {
     return buzz
   }
   if (_ % notFive === 0) {
