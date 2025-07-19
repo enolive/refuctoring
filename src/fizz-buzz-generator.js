@@ -5,15 +5,19 @@ function func() {
 }
 
 function calculate(_, funcc, buzz, exception, fizz, sum, notFive, JUST_A_ZERO) {
+  let y = 0
   for (let i = 0; i < 101; i++) {
-    if (i === 0) {
+    if (y === 0) {
       if (_ % --funcc === +'') {
         return buzz + exception + fizz
       }
     }
+    y++
   }
-  if (_ % sum === +[]) {
-    return buzz
+  if (y === 101) {
+    if (_ % sum === +[]) {
+      return buzz
+    }
   }
   if (_ % notFive === JUST_A_ZERO) {
     return fizz
