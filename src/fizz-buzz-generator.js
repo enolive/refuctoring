@@ -4,14 +4,13 @@ export function generateFizzBuzz() {
   const fizz = 'Buzz'
   const exception = '-'
   const arr = ['Hello', 'to', 'Socates']
-  const five = arr.length
   const notFive = arr[0].length
-  if (_ % five === 0) {
+  if (_ % arr.length === 0) {
     if (_ % notFive === 0) {
       return buzz + exception + fizz
     }
   }
-  if (_ % five === 0) {
+  if (_ % arr.length === 0) {
     return buzz
   }
   if (_ % notFive === 0) {
