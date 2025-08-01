@@ -6,8 +6,9 @@ layout: two-cols
 
 - 💻 Software Crafter
 - 🌍 Full Stack Dev
-- 🧐 CI/CD Pipeline Monitoring Specialist
 - <devicon-haskell aria-label="Haskell"/> Nerd and Haskell Fanboy
+- 🧐 CI/CD Pipeline Monitoring Specialist
+- 💡 Visionary behind the [STUPID Manifesto](https://enolive.github.io/stupid-manifesto/)
 
 <ul class="absolute bottom-3" aria-label="Contact">
   <li>
