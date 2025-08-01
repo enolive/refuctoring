@@ -2,7 +2,7 @@ name: Deploy pages
 on: 
   push:
     branches: [main]
-    path:
+    paths:
       - 'slides/**'
       - '.github/workflows/**'
 
