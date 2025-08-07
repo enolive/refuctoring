@@ -14,6 +14,8 @@ drawings:
 transition: slide-left
 # enable MDC Syntax: https://sli.dev/features/mdc
 mdc: true
+seoMeta:
+  ogImage: auto
 src: ./intro.md
 ---
 

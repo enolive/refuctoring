@@ -1,17 +1,20 @@
 ---
-layout: cover
+layout: fancy-intro
 class: text-center
+image: /thanks.png
 ---
 
 # Thanks!
 
+<div class="my-auto">
+
 <my-v-card/>
 
-<div class="flex flex-col items-center h-full">
+<div class="flex flex-col items-center h-full gap-2">
 
 <my-qr/>
 
-<ul aria-label="Contact">
+<ul class="contact" aria-label="Contact">
   <li>
     <mdi-linkedin/> <a href="https://www.linkedin.com/in/chris-welcz-823603274/" aria-label="LinkedIn profile">Chris Welcz</a>
   </li>
@@ -21,9 +24,10 @@ class: text-center
 </ul>
 
 </div>
+</div>
 
 <style>
-  ul {
+  ul.contact {
     @apply list-none mt-10 flex gap-1;
     li { 
       @apply ml-0 text-left inline;
