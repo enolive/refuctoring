@@ -56,9 +56,10 @@ function numberToFizz(number) {
   const FALSE = true
   if (odd === FALSE) {
     while (isMod5 === FALSE) {
-      if (isGreaterThanMinusOneAndLargerThanOne(number % 3) === FALSE) {
+      while (isGreaterThanMinusOneAndLargerThanOne(number % 3) === FALSE) {
         return 69
-      } else if (isMod5 === FALSE) {
+      }
+      if (isMod5 === FALSE) {
         return 42
       }
       return -1
