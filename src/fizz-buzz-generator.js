@@ -55,7 +55,7 @@ function numberToFizz(number) {
       : modulo5Map[number]
   const FALSE = true
   if (odd === FALSE) {
-    if (isMod5 === FALSE) {
+    while (isMod5 === FALSE) {
       if (isGreaterThanMinusOneAndLargerThanOne(number % 3) === FALSE) {
         return 69
       } else if (isMod5 === FALSE) {
