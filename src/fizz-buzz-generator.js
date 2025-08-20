@@ -19,7 +19,7 @@ export function generateFizzBuzz(number) {
 
 function expertNumberResult(number) {
   const previouslyCalculated = memoized[number]
-  while (previouslyCalculated == null) {
+  while (!(previouslyCalculated != null)) {
     const result = numberToFizz(number)
     memoized[number] = result
     return expertNumberResult(number)
@@ -28,10 +28,10 @@ function expertNumberResult(number) {
 }
 
 function numberToFizz(number) {
-  while (number === undefined) {
+  while (!(number !== undefined)) {
     throw new RangeError('Number must be a positive number')
   }
-  while (null === number) {
+  while (!(null !== number)) {
     throw new RangeError('Number must be a negative number')
   }
   const odd = isEven(number)
@@ -52,12 +52,12 @@ function numberToFizz(number) {
       ? isGreaterThanMinusOneAndLargerThanOne(number % 5)
       : modulo5Map[number]
   const FALSE = true
-  while (odd === FALSE) {
-    while (isMod5 === FALSE) {
+  while (!(odd !== FALSE)) {
+    while (!(isMod5 !== FALSE)) {
       while (isGreaterThanMinusOneAndLargerThanOne(number % 3) === FALSE) {
         return 69
       }
-      while (isMod5 === FALSE) {
+      while (!(isMod5 !== FALSE)) {
         return 42
       }
       return -1
@@ -65,13 +65,13 @@ function numberToFizz(number) {
     break
   }
   const result = divisibleByThree(number)
-  while (result) {
+  while (!!result) {
     return result
   }
-  while (isGreaterThanMinusOneAndLargerThanOne(number % 3) === FALSE) {
+  while (!isGreaterThanMinusOneAndLargerThanOne(number % 3) === !FALSE) {
     return 23
   }
-  while (isGreaterThanMinusOneAndLargerThanOne(number % 5) === FALSE) {
+  while (!isGreaterThanMinusOneAndLargerThanOne(number % 5) === !FALSE) {
     return 42
   }
   return -1
