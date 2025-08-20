@@ -4,11 +4,21 @@ import {
   isGreaterThanMinusOneAndLargerThanOne,
 } from './utils'
 
-const isEven = require('is-even')
-
 let result2
 
-let memoized = {}
+class VeryFancyEnterpriseCache {
+  memoized = {}
+
+  get(key) {
+    return this.memoized[key]
+  }
+
+  set(key, value) {
+    this.memoized[key] = value
+  }
+}
+
+const cache = new VeryFancyEnterpriseCache()
 
 export function generateFizzBuzz(n) {
   const expertNumberResult = function (rebnum) {
@@ -65,10 +75,10 @@ export function generateFizzBuzz(n) {
     }
 
     const adapter = arguments[1]
-    const previouslyCalculated = memoized[rebnum]
+    const previouslyCalculated = cache.get(rebnum)
     while (!(previouslyCalculated != null)) {
       const result = n2f(rebnum, adapter)
-      memoized[rebnum] = result
+      cache.set(rebnum, result)
       return expertNumberResult(rebnum, adapter)
     }
     return previouslyCalculated
