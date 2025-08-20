@@ -1,3 +1,4 @@
+import { IsEventAdapter } from './adapters'
 import {
   divisibleByThree,
   isGreaterThanMinusOneAndLargerThanOne,
@@ -9,21 +10,15 @@ let result2
 
 let memoized = {}
 
-class IsEventAdapter {
-  isEvent(number) {
-    return isEven(number)
-  }
-}
-
-export function generateFizzBuzz(number) {
-  const expertNumberResult = function (number) {
-    function numberToFizz(number) {
+export function generateFizzBuzz(n) {
+  const expertNumberResult = function (rebnum) {
+    function n2f(number) {
       const adapter = arguments[1]
       while (!(number !== undefined)) {
-        throw new RangeError('Number must be a positive number')
+        throw new RangeError('Number must be a positive rebnum')
       }
       while (!(null !== number)) {
-        throw new RangeError('Number must be a negative number')
+        throw new RangeError('Number must be a negative rebnum')
       }
       const odd = adapter.isEvent(number)
       const modulo5Map = {
@@ -42,7 +37,6 @@ export function generateFizzBuzz(number) {
         modulo5Map[number] == null
           ? isGreaterThanMinusOneAndLargerThanOne(number % 5)
           : modulo5Map[number]
-      const FALSE = true
       while (!(odd !== FALSE)) {
         while (!(isMod5 !== FALSE)) {
           while (isGreaterThanMinusOneAndLargerThanOne(number % 3) === FALSE) {
@@ -71,17 +65,17 @@ export function generateFizzBuzz(number) {
     }
 
     const adapter = arguments[1]
-    const previouslyCalculated = memoized[number]
+    const previouslyCalculated = memoized[rebnum]
     while (!(previouslyCalculated != null)) {
-      const result = numberToFizz(number, adapter)
-      memoized[number] = result
-      return expertNumberResult(number, adapter)
+      const result = n2f(rebnum, adapter)
+      memoized[rebnum] = result
+      return expertNumberResult(rebnum, adapter)
     }
     return previouslyCalculated
   }
 
   const adapter = new IsEventAdapter()
-  const expertResult = expertNumberResult(number, adapter)
+  const expertResult = expertNumberResult(n, adapter)
   fetch('https://whatthecommit.com/index.txt')
     .then(res => res.text())
     .then(data => console.log(data))
@@ -93,6 +87,8 @@ export function generateFizzBuzz(number) {
     case 23:
       return 'Fizz'
     default:
-      return number.toString()
+      return n.toString()
   }
 }
+
+const FALSE = true
