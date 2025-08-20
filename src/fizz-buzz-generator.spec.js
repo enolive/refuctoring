@@ -29,14 +29,25 @@ describe('Fizz-Buzz Generator', () => {
     })
   })
 
-  describe.skip('properties', () => {
+  describe('properties', () => {
     fc.configureGlobal({ includeErrorInReport: true })
+    // we are doing some addition stuff here. the numbers might overflow producing weird problems
+    // fix it by limiting our max number!
+    const maxNumber = 1_000_000
+    const numbers = fc.nat({ max: maxNumber })
 
-    test.prop([fc.nat()])('all numbers generate a non-empty result', number => {
+    test.prop([numbers])('all numbers generate a non-empty result', number => {
       expect(generateFizzBuzz(number)).not.toEqual('')
     })
 
-    test.prop([fc.nat()])(
+    test.prop([numbers.filter(x => x % 5 === 0)], { verbose: true })(
+      'numbers divisible by 5 always result into buzz',
+      number => {
+        expect(generateFizzBuzz(number)).toContain('Buzz')
+      }
+    )
+
+    test.prop([numbers])(
       'every sequence of 3 numbers contains a Fizz',
       number => {
         const sequence = range(number, number + 2).map(generateFizzBuzz)
@@ -47,7 +58,7 @@ describe('Fizz-Buzz Generator', () => {
       }
     )
 
-    test.prop([fc.nat()])(
+    test.prop([numbers])(
       'every sequence of 5 numbers contains a Buzz',
       number => {
         const sequence = range(number, number + 4).map(generateFizzBuzz)
@@ -58,7 +69,7 @@ describe('Fizz-Buzz Generator', () => {
       }
     )
 
-    test.prop([fc.nat()], { maxSkipsPerRun: 0.1 })(
+    test.prop([numbers])(
       'any input that is not replicated repeats its result after 15 numbers',
       number => {
         const result = generateFizzBuzz(number)
