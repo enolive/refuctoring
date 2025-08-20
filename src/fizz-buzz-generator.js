@@ -4,6 +4,9 @@ export function generateFizzBuzz(number) {
   if (number === undefined) {
     throw new RangeError('Number must be a positive number')
   }
+  if (null === number) {
+    throw new RangeError('Number must be a negative number')
+  }
   const odd = isEven(number)
   const modulo5Map = {
     1: false,
