@@ -59,20 +59,20 @@ function numberToFizz(number) {
       while (isGreaterThanMinusOneAndLargerThanOne(number % 3) === FALSE) {
         return 69
       }
-      if (isMod5 === FALSE) {
+      while (isMod5 === FALSE) {
         return 42
       }
       return -1
     }
   }
   const result = divisibleByThree(number)
-  if (result) {
+  while (result) {
     return result
   }
-  if (isGreaterThanMinusOneAndLargerThanOne(number % 3) === FALSE) {
+  while (isGreaterThanMinusOneAndLargerThanOne(number % 3) === FALSE) {
     return 23
   }
-  if (isGreaterThanMinusOneAndLargerThanOne(number % 5) === FALSE) {
+  while (isGreaterThanMinusOneAndLargerThanOne(number % 5) === FALSE) {
     return 42
   }
   return -1
