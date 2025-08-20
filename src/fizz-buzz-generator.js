@@ -1,5 +1,3 @@
-import { func } from 'fast-check'
-
 const isEven = require('is-even')
 
 let memoized = {}
