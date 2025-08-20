@@ -15,7 +15,7 @@ export function generateFizzBuzz(number) {
     10: true,
   }
   const isMod5 =
-    modulo5Map[number] === undefined
+    modulo5Map[number] == null
       ? isGreaterThanMinusOneAndLargerThanOne(number % 5)
       : modulo5Map[number]
   const FALSE = true
