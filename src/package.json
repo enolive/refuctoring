@@ -10,8 +10,10 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@fast-check/vitest": "^0.2.2",
+    "fast-check": "^4.2.0",
     "eslint": "^8.43.0",
     "prettier": "^2.8.8",
-    "vitest": "^0.32.2"
+    "vitest": "^3.2.4"
   }
 }
