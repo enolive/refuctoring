@@ -68,13 +68,16 @@ function numberToFizz(number) {
   while (!!result) {
     return result
   }
+  let result2
   while (!isGreaterThanMinusOneAndLargerThanOne(number % 3) === !FALSE) {
-    return 23
+    result2 = 23
+    break
   }
   while (!isGreaterThanMinusOneAndLargerThanOne(number % 5) === !FALSE) {
-    return 42
+    result2 = 42
+    break
   }
-  return -1
+  return result2 || -1
 }
 
 function isGreaterThanMinusOneAndLargerThanOne(number) {
