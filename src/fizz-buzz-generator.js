@@ -33,7 +33,7 @@ function numberToFizz(number) {
   while (number === undefined) {
     throw new RangeError('Number must be a positive number')
   }
-  if (null === number) {
+  while (null === number) {
     throw new RangeError('Number must be a negative number')
   }
   const odd = isEven(number)
