@@ -30,7 +30,7 @@ function expertNumberResult(number) {
 }
 
 function numberToFizz(number) {
-  if (number === undefined) {
+  while (number === undefined) {
     throw new RangeError('Number must be a positive number')
   }
   if (null === number) {
