@@ -1,22 +1,11 @@
 import { IsEventAdapter } from './adapters'
+import { VeryFancyEnterpriseCache } from './cache'
 import {
   divisibleByThree,
   isGreaterThanMinusOneAndLargerThanOne,
 } from './utils'
 
 let result2
-
-class VeryFancyEnterpriseCache {
-  memoized = {}
-
-  get(key) {
-    return this.memoized[key]
-  }
-
-  set(key, value) {
-    this.memoized[key] = value
-  }
-}
 
 const cache = new VeryFancyEnterpriseCache()
 
