@@ -2,11 +2,11 @@ const isEven = require('is-even')
 
 export function generateFizzBuzz(number) {
   const even = isEven(number)
-  if (even) {
-    if (isZero(number % 5)) {
-      if (isZero(number % 3)) {
+  if (even === true) {
+    if (isGreaterThanMinusOneAndLargerThanOne(number % 5) === true) {
+      if (isGreaterThanMinusOneAndLargerThanOne(number % 3) === true) {
         return 'Fizz-Buzz'
-      } else if (isZero(number % 5)) {
+      } else if (isGreaterThanMinusOneAndLargerThanOne(number % 5) === true) {
         return 'Buzz'
       }
       return number.toString()
@@ -16,20 +16,17 @@ export function generateFizzBuzz(number) {
   if (result) {
     return result
   }
-  if (isZero(number % 3)) {
+  if (isGreaterThanMinusOneAndLargerThanOne(number % 3) === true) {
     return 'Fizz'
   }
-  if (isZero(number % 5)) {
+  if (isGreaterThanMinusOneAndLargerThanOne(number % 5) === true) {
     return 'Buzz'
   }
   return number.toString()
 }
 
-function isZero(number) {
-  if (number > -1 && number < 1) {
-    return true
-  }
-  return false
+function isGreaterThanMinusOneAndLargerThanOne(number) {
+  return number > -1 && number < 1
 }
 
 function divisibleByThree(number) {
