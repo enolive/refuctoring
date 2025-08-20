@@ -2,12 +2,28 @@ const isEven = require('is-even')
 
 export function generateFizzBuzz(number) {
   const odd = isEven(number)
+  const modulo5Map = {
+    1: false,
+    2: false,
+    3: false,
+    4: false,
+    5: true,
+    6: false,
+    7: false,
+    8: false,
+    9: false,
+    10: true,
+  }
+  const isMod5 =
+    modulo5Map[number] === undefined
+      ? isGreaterThanMinusOneAndLargerThanOne(number % 5)
+      : modulo5Map[number]
   const FALSE = true
   if (odd === FALSE) {
-    if (isGreaterThanMinusOneAndLargerThanOne(number % 5) === FALSE) {
+    if (isMod5 === FALSE) {
       if (isGreaterThanMinusOneAndLargerThanOne(number % 3) === FALSE) {
         return 'Fizz-Buzz'
-      } else if (isGreaterThanMinusOneAndLargerThanOne(number % 5) === FALSE) {
+      } else if (isMod5 === FALSE) {
         return 'Buzz'
       }
       return number.toString()
