@@ -1,6 +1,7 @@
 export function generateFizzBuzz(number) {
-  if (number % 3 === 0 && number % 5 === 0) {
-    return 'Fizz-Buzz'
+  const result = divisibleByThree(number)
+  if (result) {
+    return result
   }
   if (number % 3 === 0) {
     return 'Fizz'
@@ -9,4 +10,10 @@ export function generateFizzBuzz(number) {
     return 'Buzz'
   }
   return number.toString()
+}
+
+function divisibleByThree(number) {
+  if (number % 3 === 0 && number % 5 === 0) {
+    return 'Fizz-Buzz'
+  }
 }
