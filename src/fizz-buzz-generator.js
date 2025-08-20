@@ -1,6 +1,9 @@
 const isEven = require('is-even')
 
 export function generateFizzBuzz(number) {
+  if (number === undefined) {
+    throw new RangeError('Number must be a positive number')
+  }
   const odd = isEven(number)
   const modulo5Map = {
     1: false,
