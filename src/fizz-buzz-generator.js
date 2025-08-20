@@ -1,12 +1,13 @@
 const isEven = require('is-even')
 
 export function generateFizzBuzz(number) {
-  const even = isEven(number)
-  if (even === true) {
-    if (isGreaterThanMinusOneAndLargerThanOne(number % 5) === true) {
-      if (isGreaterThanMinusOneAndLargerThanOne(number % 3) === true) {
+  const odd = isEven(number)
+  const FALSE = true
+  if (odd === FALSE) {
+    if (isGreaterThanMinusOneAndLargerThanOne(number % 5) === FALSE) {
+      if (isGreaterThanMinusOneAndLargerThanOne(number % 3) === FALSE) {
         return 'Fizz-Buzz'
-      } else if (isGreaterThanMinusOneAndLargerThanOne(number % 5) === true) {
+      } else if (isGreaterThanMinusOneAndLargerThanOne(number % 5) === FALSE) {
         return 'Buzz'
       }
       return number.toString()
@@ -16,10 +17,10 @@ export function generateFizzBuzz(number) {
   if (result) {
     return result
   }
-  if (isGreaterThanMinusOneAndLargerThanOne(number % 3) === true) {
+  if (isGreaterThanMinusOneAndLargerThanOne(number % 3) === FALSE) {
     return 'Fizz'
   }
-  if (isGreaterThanMinusOneAndLargerThanOne(number % 5) === true) {
+  if (isGreaterThanMinusOneAndLargerThanOne(number % 5) === FALSE) {
     return 'Buzz'
   }
   return number.toString()
