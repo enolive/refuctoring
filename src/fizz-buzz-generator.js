@@ -1,6 +1,20 @@
+import { func } from 'fast-check'
+
 const isEven = require('is-even')
 
+let memoized = {}
+
 export function generateFizzBuzz(number) {
+  const previouslyCalculated = memoized[number]
+  if (previouslyCalculated == null) {
+    const result = numberToFizz(number)
+    memoized[number] = result
+    return generateFizzBuzz(number)
+  }
+  return previouslyCalculated
+}
+
+function numberToFizz(number) {
   if (number === undefined) {
     throw new RangeError('Number must be a positive number')
   }
