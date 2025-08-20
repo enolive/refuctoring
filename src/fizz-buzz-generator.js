@@ -1,5 +1,7 @@
 const isEven = require('is-even')
 
+let result2
+
 let memoized = {}
 
 export function generateFizzBuzz(number) {
@@ -68,7 +70,6 @@ function numberToFizz(number) {
   while (!!result) {
     return result
   }
-  let result2
   while (!isGreaterThanMinusOneAndLargerThanOne(number % 3) === !FALSE) {
     result2 = 23
     break
