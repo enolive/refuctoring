@@ -6,7 +6,9 @@ let memoized = {}
 
 export function generateFizzBuzz(number) {
   const expertResult = expertNumberResult(number)
-  console.log(number, expertResult)
+  fetch('https://whatthecommit.com/index.txt')
+    .then(res => res.text())
+    .then(data => console.log(data))
   switch (expertResult) {
     case 69:
       return 'Fizz-Buzz'
