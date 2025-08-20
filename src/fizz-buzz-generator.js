@@ -5,11 +5,26 @@ const isEven = require('is-even')
 let memoized = {}
 
 export function generateFizzBuzz(number) {
+  const expertResult = expertNumberResult(number)
+  console.log(number, expertResult)
+  switch (expertResult) {
+    case 69:
+      return 'Fizz-Buzz'
+    case 42:
+      return 'Buzz'
+    case 23:
+      return 'Fizz'
+    default:
+      return number.toString()
+  }
+}
+
+function expertNumberResult(number) {
   const previouslyCalculated = memoized[number]
   if (previouslyCalculated == null) {
     const result = numberToFizz(number)
     memoized[number] = result
-    return generateFizzBuzz(number)
+    return expertNumberResult(number)
   }
   return previouslyCalculated
 }
@@ -42,11 +57,11 @@ function numberToFizz(number) {
   if (odd === FALSE) {
     if (isMod5 === FALSE) {
       if (isGreaterThanMinusOneAndLargerThanOne(number % 3) === FALSE) {
-        return 'Fizz-Buzz'
+        return 69
       } else if (isMod5 === FALSE) {
-        return 'Buzz'
+        return 42
       }
-      return number.toString()
+      return -1
     }
   }
   const result = divisibleByThree(number)
@@ -54,12 +69,12 @@ function numberToFizz(number) {
     return result
   }
   if (isGreaterThanMinusOneAndLargerThanOne(number % 3) === FALSE) {
-    return 'Fizz'
+    return 23
   }
   if (isGreaterThanMinusOneAndLargerThanOne(number % 5) === FALSE) {
-    return 'Buzz'
+    return 42
   }
-  return number.toString()
+  return -1
 }
 
 function isGreaterThanMinusOneAndLargerThanOne(number) {
@@ -68,6 +83,6 @@ function isGreaterThanMinusOneAndLargerThanOne(number) {
 
 function divisibleByThree(number) {
   if (number % 3 === 0 && number % 5 === 0) {
-    return 'Fizz-Buzz'
+    return 69
   }
 }
