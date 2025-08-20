@@ -21,7 +21,7 @@ export function generateFizzBuzz(number) {
 
 function expertNumberResult(number) {
   const previouslyCalculated = memoized[number]
-  if (previouslyCalculated == null) {
+  while (previouslyCalculated == null) {
     const result = numberToFizz(number)
     memoized[number] = result
     return expertNumberResult(number)
