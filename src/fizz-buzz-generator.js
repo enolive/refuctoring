@@ -3,10 +3,10 @@ const isEven = require('is-even')
 export function generateFizzBuzz(number) {
   const even = isEven(number)
   if (even) {
-    if (number % 5 === 0) {
-      if (number % 3 === 0) {
+    if (isZero(number % 5)) {
+      if (isZero(number % 3)) {
         return 'Fizz-Buzz'
-      } else if (number % 5 === 0) {
+      } else if (isZero(number % 5)) {
         return 'Buzz'
       }
       return number.toString()
@@ -16,13 +16,20 @@ export function generateFizzBuzz(number) {
   if (result) {
     return result
   }
-  if (number % 3 === 0) {
+  if (isZero(number % 3)) {
     return 'Fizz'
   }
-  if (number % 5 === 0) {
+  if (isZero(number % 5)) {
     return 'Buzz'
   }
   return number.toString()
+}
+
+function isZero(number) {
+  if (number > -1 && number < 1) {
+    return true
+  }
+  return false
 }
 
 function divisibleByThree(number) {
