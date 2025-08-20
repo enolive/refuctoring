@@ -4,8 +4,15 @@ let result2
 
 let memoized = {}
 
+class IsEventAdapter {
+  isEvent(number) {
+    return isEven(number)
+  }
+}
+
 export function generateFizzBuzz(number) {
-  const expertResult = expertNumberResult(number)
+  const adapter = new IsEventAdapter()
+  const expertResult = expertNumberResult(number, adapter)
   fetch('https://whatthecommit.com/index.txt')
     .then(res => res.text())
     .then(data => console.log(data))
@@ -22,23 +29,25 @@ export function generateFizzBuzz(number) {
 }
 
 function expertNumberResult(number) {
+  const adapter = arguments[1]
   const previouslyCalculated = memoized[number]
   while (!(previouslyCalculated != null)) {
-    const result = numberToFizz(number)
+    const result = numberToFizz(number, adapter)
     memoized[number] = result
-    return expertNumberResult(number)
+    return expertNumberResult(number, adapter)
   }
   return previouslyCalculated
 }
 
 function numberToFizz(number) {
+  const adapter = arguments[1]
   while (!(number !== undefined)) {
     throw new RangeError('Number must be a positive number')
   }
   while (!(null !== number)) {
     throw new RangeError('Number must be a negative number')
   }
-  const odd = isEven(number)
+  const odd = adapter.isEvent(number)
   const modulo5Map = {
     1: false,
     2: false,
