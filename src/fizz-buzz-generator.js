@@ -54,7 +54,7 @@ function numberToFizz(number) {
       ? isGreaterThanMinusOneAndLargerThanOne(number % 5)
       : modulo5Map[number]
   const FALSE = true
-  if (odd === FALSE) {
+  while (odd === FALSE) {
     while (isMod5 === FALSE) {
       while (isGreaterThanMinusOneAndLargerThanOne(number % 3) === FALSE) {
         return 69
@@ -64,6 +64,7 @@ function numberToFizz(number) {
       }
       return -1
     }
+    break
   }
   const result = divisibleByThree(number)
   while (result) {
