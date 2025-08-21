@@ -1,4 +1,3 @@
-// generateFizzBuzz :: Integral a => a -> String
 import {
   and,
   const_,
@@ -11,6 +10,7 @@ import {
   snd,
 } from './prelude'
 
+// generateFizzBuzz :: Integral a => a -> String
 export const generateFizzBuzz = n => {
   const guard = [
     [and(isDivisibleBy(3))(isDivisibleBy(5)), const_('Fizz-Buzz')],
