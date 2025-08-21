@@ -23,4 +23,4 @@ const filter = p => xs => xs.filter(p)
 // head :: [a] -> a
 const head = xs => xs[0]
 // compose :: (b -> c) -> (a -> b) -> a -> c
-const compose = f => g => x => f(g(x))
+export const compose = f => g => x => f(g(x))
