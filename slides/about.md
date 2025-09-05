@@ -13,13 +13,21 @@ layout: two-cols
 <ul class="absolute bottom-3" aria-label="Contact">
   <li>
     <mdi-linkedin/>&nbsp; 
-    <a href="https://www.linkedin.com/in/chris-welcz-823603274/" aria-label="LinkedIn profile">
+    <a href="https://www.linkedin.com/in/chris-welcz-823603274/" aria-label="LinkedIn profile" target="_blank">
       Chris Welcz
     </a>
   </li>
   <li>
     <mdi-github/>&nbsp; 
-    <a href="https://github.com/enolive" aria-label="GitHub Profile">enolive</a>
+    <a href="https://github.com/enolive" aria-label="GitHub Profile" target="_blank">
+      enolive
+    </a>
+  </li>
+  <li>
+    <bi-bluesky/>&nbsp; 
+    <a href="https://bsky.app/profile/chriswelcz.bsky.social" aria-label="BlueSky Profile" target="_blank">
+      @chriswelcz
+    </a>
   </li>
 </ul>
 

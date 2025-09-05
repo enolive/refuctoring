@@ -16,10 +16,20 @@ image: /thanks.png
 
 <ul class="contact" aria-label="Contact">
   <li>
-    <mdi-linkedin/> <a href="https://www.linkedin.com/in/chris-welcz-823603274/" aria-label="LinkedIn profile">Chris Welcz</a>
+    <mdi-linkedin/> 
+    <a href="https://www.linkedin.com/in/chris-welcz-823603274/" aria-label="LinkedIn profile" target="_blank">
+      Chris Welcz
+    </a>
   </li>
   <li>
-    <mdi-github/> <a href="https://github.com/enolive" aria-label="GitHub Profile">enolive</a>
+    <mdi-github/> 
+    <a href="https://github.com/enolive" aria-label="GitHub Profile" target="_blank">enolive</a>
+  </li>
+  <li>
+    <bi-bluesky/>
+    <a href="https://bsky.app/profile/chriswelcz.bsky.social" aria-label="BlueSky Profile" target="_blank">
+      @chriswelcz
+    </a>
   </li>
 </ul>
 
