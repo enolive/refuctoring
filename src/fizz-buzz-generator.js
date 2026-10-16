@@ -8,7 +8,10 @@ function append(result, array) {
   if (array.length === 0) {
     return result
   }
-  result = append(new Result(result.result + array[0]), array.slice(1))
+  result.result = append(
+    new Result(result.result + array[0]),
+    array.slice(1)
+  ).result
   return result
 }
 
@@ -25,7 +28,7 @@ export function generateFizzBuzz(number) {
   }
   if (number % 5 == []) {
     if (result.result === 'Fizz') {
-      result = append(result, [dash, b, u, z, z])
+      append(result, [dash, b, u, z, z])
     } else {
       result.result = b + u + z + z
     }
