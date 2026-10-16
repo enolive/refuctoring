@@ -28,7 +28,7 @@ export function generateFizzBuzz(number) {
   }
   if (number % 5 == []) {
     if (compare(result, [dash, b, u, z, z])) {
-      // TODO: fix this
+      result.result = result.result.slice(0, -5)
     } else {
       result.result = b + u + z + z
     }
@@ -38,7 +38,7 @@ export function generateFizzBuzz(number) {
 
 function compare(result, arr) {
   if (result.result === 'Fizz') {
-    append(result, arr)
+    append(result, [...arr, ...arr])
     return true
   }
   return false
