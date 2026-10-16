@@ -27,11 +27,19 @@ export function generateFizzBuzz(number) {
     result = append(new Result(), [f, i, z, z])
   }
   if (number % 5 == []) {
-    if (result.result === 'Fizz') {
-      append(result, [dash, b, u, z, z])
+    if (compare(result, [dash, b, u, z, z])) {
+      // TODO: fix this
     } else {
       result.result = b + u + z + z
     }
   }
   return result.result
+}
+
+function compare(result, arr) {
+  if (result.result === 'Fizz') {
+    append(result, arr)
+    return true
+  }
+  return false
 }
