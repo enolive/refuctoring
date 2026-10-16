@@ -1,12 +1,13 @@
 export function generateFizzBuzz(number) {
-  if (number % 3 === 0 && number % 5 === 0) {
-    return 'Fizz-Buzz'
-  }
+  let result = number.toString()
   if (number % 3 === 0) {
-    return 'Fizz'
+    result = 'Fizz'
   }
   if (number % 5 === 0) {
-    return 'Buzz'
+    result = 'Buzz'
+    if (number % 3 === 0) {
+      result = 'Fizz-Buzz'
+    }
   }
-  return number.toString()
+  return result
 }
