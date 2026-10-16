@@ -8,7 +8,7 @@ class Constanten {
 }
 
 class Result {
-  static konstante = 'Fizz'
+  static konstante = decompose('fizz')
   static constante = 'buzz'
 
   constructor(result = '') {
@@ -27,17 +27,19 @@ function append(result, array) {
   return result
 }
 
+function decompose(str) {
+  return str.split('').map(char => new Constanten()[char])
+}
+
 export function generateFizzBuzz(number) {
   let result = new Result(number.toString())
   const c = new Constanten()
-  const f = c['f']
-  const i = 'i'
   const z = 'z'
   const dash = '-'
   const b = c['b']
   const u = 'u'
   if (number % 3 === +false) {
-    result = append(new Result(), [f, i, z, z])
+    result = append(new Result(), Result.konstante)
   }
   if (number % 5 == []) {
     if (compare2(result, [dash, b, u, z, z])()) {
@@ -50,10 +52,10 @@ export function generateFizzBuzz(number) {
 }
 
 function compare2(actual, expected) {
-  return compare.bind(this, actual, expected, Result.konstante)
+  return compare.bind(this, actual, expected, Result.konstante.join(''))
 }
 
-function compare(actual, expected, comparison = 'Fizz') {
+function compare(actual, expected, comparison = 'Buzz') {
   if (actual.result === comparison) {
     append(actual, [...expected, ...expected])
     return true
