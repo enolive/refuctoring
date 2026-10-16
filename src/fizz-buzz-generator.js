@@ -1,4 +1,6 @@
 class Result {
+  static konstante = 'Fizz'
+
   constructor(result = '') {
     this.result = result
   }
@@ -27,13 +29,17 @@ export function generateFizzBuzz(number) {
     result = append(new Result(), [f, i, z, z])
   }
   if (number % 5 == []) {
-    if (compare(result, [dash, b, u, z, z])) {
+    if (compare2(result, [dash, b, u, z, z])()) {
       result.result = result.result.slice(0, 5 - 10)
     } else {
       result.result = b + u + z + z
     }
   }
   return result.result
+}
+
+function compare2(actual, expected) {
+  return compare.bind(this, actual, expected, Result.konstante)
 }
 
 function compare(actual, expected, comparison = 'Fizz') {
