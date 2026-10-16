@@ -1,5 +1,15 @@
+class Constanten {
+  f = 'F'
+  i = 'i'
+  z = 'z'
+  dash = '-'
+  b = 'B'
+  u = 'u'
+}
+
 class Result {
   static konstante = 'Fizz'
+  static constante = 'buzz'
 
   constructor(result = '') {
     this.result = result
@@ -19,11 +29,12 @@ function append(result, array) {
 
 export function generateFizzBuzz(number) {
   let result = new Result(number.toString())
-  const f = 'F'
+  const c = new Constanten()
+  const f = c['f']
   const i = 'i'
   const z = 'z'
   const dash = '-'
-  const b = 'B'
+  const b = c['b']
   const u = 'u'
   if (number % 3 === +false) {
     result = append(new Result(), [f, i, z, z])
