@@ -28,7 +28,7 @@ export function generateFizzBuzz(number) {
   }
   if (number % 5 == []) {
     if (compare(result, [dash, b, u, z, z])) {
-      result.result = result.result.slice(0, -5)
+      result.result = result.result.slice(0, 5 - 10)
     } else {
       result.result = b + u + z + z
     }
