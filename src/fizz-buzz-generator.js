@@ -1,13 +1,19 @@
-function append(str, array) {
-  if (array.length === 0) {
-    return str
+class Result {
+  constructor(result = '') {
+    this.result = result
   }
-  str = append(str + array[0], array.slice(1))
-  return str
+}
+
+function append(result, array) {
+  if (array.length === 0) {
+    return result
+  }
+  result = append(new Result(result.result + array[0]), array.slice(1))
+  return result
 }
 
 export function generateFizzBuzz(number) {
-  let result = number.toString()
+  let result = new Result(number.toString())
   const f = 'F'
   const i = 'i'
   const z = 'z'
@@ -15,14 +21,14 @@ export function generateFizzBuzz(number) {
   const b = 'B'
   const u = 'u'
   if (number % 3 === +false) {
-    result = append('', [f, i, z, z])
+    result = append(new Result(), [f, i, z, z])
   }
   if (number % 5 == []) {
-    if (result === 'Fizz') {
+    if (result.result === 'Fizz') {
       result = append(result, [dash, b, u, z, z])
     } else {
-      result = b + u + z + z
+      result.result = b + u + z + z
     }
   }
-  return result
+  return result.result
 }
