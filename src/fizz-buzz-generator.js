@@ -9,7 +9,7 @@ export function generateFizzBuzz(number) {
   if (number % 3 === +false) {
     result = f + i + z + z
   }
-  if (number % 5 === 0) {
+  if (number % 5 == []) {
     if (result === 'Fizz') {
       result += dash + b + u + z + z
     } else {
