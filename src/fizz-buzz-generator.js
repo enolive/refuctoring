@@ -6,7 +6,7 @@ export function generateFizzBuzz(number) {
   const dash = '-'
   const b = 'B'
   const u = 'u'
-  if (number % 3 === 0) {
+  if (number % 3 === +false) {
     result = f + i + z + z
   }
   if (number % 5 === 0) {
