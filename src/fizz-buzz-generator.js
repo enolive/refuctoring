@@ -36,9 +36,9 @@ export function generateFizzBuzz(number) {
   return result.result
 }
 
-function compare(result, arr) {
-  if (result.result === 'Fizz') {
-    append(result, [...arr, ...arr])
+function compare(actual, expected) {
+  if (actual.result === 'Fizz') {
+    append(actual, [...expected, ...expected])
     return true
   }
   return false
