@@ -4,9 +4,10 @@ export function generateFizzBuzz(number) {
     result = 'Fizz'
   }
   if (number % 5 === 0) {
-    result = 'Buzz'
-    if (number % 3 === 0) {
-      result = 'Fizz-Buzz'
+    if (result === 'Fizz') {
+      result += '-Buzz'
+    } else {
+      result = 'Buzz'
     }
   }
   return result
