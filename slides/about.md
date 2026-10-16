@@ -8,7 +8,7 @@ layout: two-cols
 - 🌍 Full Stack Dev
 - <devicon-haskell aria-label="Haskell"/> Nerd and Haskell Fanboy
 - 🧐 CI/CD Pipeline Monitoring Specialist
-- 💡 Visionary behind the [STUPID Manifesto](https://enolive.github.io/stupid-manifesto/)
+- 🦊 [Fox Furry enthusiast](https://enolive.github.io/fox-dev-furries)
 
 <ul class="absolute bottom-3" aria-label="Contact">
   <li>
