@@ -1,3 +1,3 @@
 <template>
-  <v-card github-url="https://github.com/enolive/refuctoring" bluesky="chriswelcz"/>
+  <v-card github-url="https://github.com/enolive/refuctoring" bluesky="chriswelcz" />
 </template>
